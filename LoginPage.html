@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            max-width: 300px;
+            margin: auto;
+            padding: 20px 70px 40px 70px;
+            background-color: #fff;
+            border-radius: 50px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border: 2px solid #28a745;
+
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: auto;
+            margin-top: 10px;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+        input:focus {
+            outline: none;
+            border:2px solid #28a745;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        #success-message {
+            display: none;
+
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+            color: green;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+        .section-1{
+            max-width: 300px;
+            margin-top: 10px;
+            padding: 20px 70px 40px 70px;
+            background-color: #fff;
+            border-radius: 50px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border: 2px solid #28a745;
+        }
+        .section-2{
+            display: none;
+            padding: 0;
+            margin: 0;
+            max-height: 100vh;
+        }
+        .register-form{
+            margin-bottom: 40px;
+            padding: 20px;
+
+        }
+        .section-3{
+            display: none;
+            text-align: center;
+            padding: 20px;
+            background-color: #e9ecef;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
+            border: 2px solid #28a745;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
+            border: 2px solid #218838;
+            font-family: monospace;
+            font-size: x-large;
+        }
+        #dashboard-title {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+            font-size: xx-large;
+            color: #28a745;
+            margin-bottom: 20px;
+            color: #28a745;
+        }
+        .section-4{
+            display: none;
+
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1 id="login-title">Welcome to the Login Page</h1>
+
+<!--   Login Form starts   -->
+    <div class="section-1">
+        <!-- <form id="login-form"> -->
+            <h2 style="text-align: center;">Login</h2>
+            <p style="text-align: center;">Enter your username and password to access your account.</p>
+            <br>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <input type="submit" value="Login" id="submit-login">
+        <!-- </form> -->
+
+        <p style="text-align: center; margin-top: 20px;">Don't have an account? <a href="#register-form" id="register-link">Register here</a></p>
+        <p style="text-align: center;"><a href="forgot-password.html">Forgot Password?</a></p>
+        <p style="text-align: center;">&copy; 2023 Your Company Name</p>
+    </div>
+<!--   Login Form ends   -->
+
+<!--   Register Form starts   -->
+   <div class="section-2" id="register-container" style="margin-top: 50px;">
+
+    <form id="register-form" >
+        <h2 style="text-align: center;">Register</h2>
+        <p style="text-align: center;">Create a new account to get started.</p>
+        <br>
+
+        <label for="new-username">Username:</label>
+        <input type="text" id="new-username" name="username" placeholder="Username" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" placeholder="Email" required>
+        <br>
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
+        <br>
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" placeholder="Address" required>
+        <br>
+        <label for="new-password">Password:</label>
+        <input type="password" id="new-password" name="new-password" placeholder="Password" required>
+
+
+        <br>
+        <input type="submit" value="Register" id="submit-register">
+
+       </form>
+
+       
+    </div>
+<!--   Register Form ends   -->
+
+
+<!--   Success Message   -->
+    <div id="success-message" >
+        <p>Registration successful! You can now log in.</p>
+    </div>
+
+<!--   User Dashboard starts   -->
+
+    <div class="section-4">
+        <h1 id="dashboard-title">Welcome to the user dashboard!</h1>
+    <div class="section-3">
+
+        <p></p>
+        <p>Here you can manage your account, view your profile, and access other features.</p>
+        <p>Feel free to explore the options available in your account.</p>
+        <p>If you have any questions or need assistance, please contact our support team.</p>
+        <p>Thank you for using our service!</p>
+        <p>&copy; 2023 Your Company Name</p>
+    
+    </div>
+    </div>
+<!--   User Dashboard ends   -->
+
+    <script>
+// Register form submission
+
+const LoginContainer = document.querySelector('.section-1');
+const registerLink = document.getElementById('register-link');
+const registerContainer = document.getElementById('register-container');
+const registerForm = document.getElementById('register-form');
+const welcome=document.querySelector('.section-3');
+
+const dashboardTitle = document.getElementById('dashboard-title');
+const dashboardContainer = document.querySelector('.section-4');
+
+let nameInput = document.getElementById('new-username');
+let emailInput = document.getElementById('email');
+let phoneInput = document.getElementById('phone');
+let addressInput = document.getElementById('address');
+let passwordInput = document.getElementById('new-password');
+
+const submitRegisterButton = document.getElementById('submit-register');
+
+// Show the register form when the link is clicked
+registerLink.addEventListener('click', function(event) {
+    event.preventDefault();
+    LoginContainer.style.display = 'none';
+    document.getElementById('login-title').style.display = 'none';
+    registerContainer.style.display = 'block';
+});
+
+submitRegisterButton.addEventListener('click', function(event) {
+    
+    // Get the values from the input fields
+    emailInput = emailInput.value.trim();
+    nameInput = nameInput.value.trim();
+    phoneInput = phoneInput.value.trim();
+    addressInput = addressInput.value.trim();
+    passwordInput = passwordInput.value.trim();
+
+    console.log(nameInput);
+    console.log(passwordInput);
+    
+    let data = {
+        username: nameInput,
+        email: emailInput,
+        phone: phoneInput,
+        address: addressInput,
+        password: passwordInput
+    };
+    // Prevent form submission
+    event.preventDefault();
+
+    localStorage.setItem('userData', JSON.stringify(data));
+    // Log the data to the console (for demonstration purposes)
+
+    let storedData = localStorage.getItem('userData');
+    if (storedData) {
+        data = JSON.parse(storedData);
+    } else {
+        data = {};
+    }
+    console.log('User Data:', data);
+
+
+    
+    // Clear the form fields
+    nameInput.value = '';
+    emailInput.value = '';
+    phoneInput.value = '';
+    addressInput.value = '';
+    passwordInput.value = '';
+
+    
+    // Hide the register form
+    registerContainer.style.display = 'none';
+
+
+    // Show the success message
+    const successMessage = document.getElementById('success-message');
+    successMessage.style.display = 'block';
+    LoginContainer.style.display = 'none';
+
+    successMessage.textContent = 'Registration successful! You can now log in.';
+    setTimeout(() => {
+        successMessage.style.display = 'none';
+        LoginContainer.style.display = 'block';
+    }, 3000); // Hide the message after 3 seconds
+});
+
+
+//  Login form submission
+
+let usernameLoginInput = document.getElementById('username');
+let passwordLoginInput = document.getElementById('password');
+const submitLoginButton = document.getElementById('submit-login');
+
+submitLoginButton.addEventListener('click', function(event) {
+
+    localStorage.getItem('userData');
+
+    usernameLoginInput = usernameLoginInput.value.trim();
+    passwordLoginInput = passwordLoginInput.value.trim();
+    console.log(usernameLoginInput);
+    console.log(passwordLoginInput);
+    
+    // Retrieve user data from localStorage
+    let storedData = JSON.parse(localStorage.getItem('userData'));
+
+
+    // Check if user data exists and validate login
+    if(storedData.username === usernameLoginInput && storedData.password === passwordLoginInput) {
+        console.log('Login successful!');
+
+        // Hide the login form
+        LoginContainer.style.display = 'none';
+        registerContainer.style.display = 'none';
+        document.getElementById('login-title').style.display = 'none';
+        dashboardTitle.style.display = 'block';
+
+        // Show the welcome section
+        welcome.style="display: block;";
+        dashboardContainer.style="display: flex;flex-direction: column;align-items: center;justify-content: center;";
+        welcome.innerHTML = `<h2>Welcome, ${storedData.username.charAt(0).toUpperCase()}${storedData.username.slice(1)}!</h2>
+                             <p>Your email: ${storedData.email}</p>
+                             <p>Your phone: ${storedData.phone}</p>
+                             <p>Your address: ${storedData.address}</p>`;        
+    } else {
+        console.log('Invalid username or password.');
+    }
+    // Prevent form submission
+    event.preventDefault();
+})
+
+
+
+
+
+
+    </script>
+</body>
+</html>
