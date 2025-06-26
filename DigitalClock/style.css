@@ -1,0 +1,52 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Clock Container with Glassmorphism */
+.clock-container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px 70px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(240, 235, 235, 0.737);
+  text-align: center;
+}
+
+/* Clock Display */
+#clock {
+  font-size: 5rem;
+  color: #ffffff;
+  text-shadow:
+    0 0 10px #ffffff,
+    0 0 20px #00b3ff,
+    0 0 40px #00b3ff;
+  letter-spacing: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .clock-container {
+    padding: 30px 40px;
+  }
+
+  #clock {
+    font-size: 3rem;
+    letter-spacing: 4px;
+  }
+}
