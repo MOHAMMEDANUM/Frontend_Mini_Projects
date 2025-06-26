@@ -32,11 +32,21 @@ body {
   color: #ffffff;
   text-shadow:
     0 0 10px #ffffff,
-    0 0 20px #00b3ff,
+    0 0 20px #579dbb,
     0 0 40px #00b3ff;
   letter-spacing: 6px;
   font-weight: 600;
   transition: all 0.3s ease-in-out;
+}
+
+h1 {
+  color: #ffffff;
+  text-shadow:
+    0 0 10px #441616,
+    0 0 20px #00b3ff,
+    0 0 40px #441616;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 /* Responsive */
