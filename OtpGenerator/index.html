@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OTP Generator & Validator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Generate OTP Box -->
+    <div class="box">
+      <h2>Generate OTP</h2>
+      <button id="generateBtn">Generate</button>
+      <p id="showOtp">OTP: </p>
+    </div>
+
+    <!-- Verify OTP Box -->
+    <div class="box">
+      <h2>Verify OTP</h2>
+      <input type="text" id="otpInput" maxlength="6" placeholder="Enter OTP" />
+      <button id="verifyBtn">Verify</button>
+      <p id="message"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
