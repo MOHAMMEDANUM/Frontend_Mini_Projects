@@ -55,24 +55,51 @@ body {
   background-color: #ddd;
 }
 
-.operator {
+#btn-operator {
   background-color: #007bff;
+    border: none;
+      padding: 20px;
+  font-size: 1.2rem;
+  border-radius: 10px;
   color: white;
 }
 
-.operator:hover {
+#btn-operator:hover {
   background-color: #0056b3;
 }
 
-.equals {
+.btn-operator{
+  background-color: #007bff;
+    border: none;
+      padding: 20px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  color: white;
+}
+.btn-operator:hover {
+  background-color: #0056b3;
+}
+
+.btn-equals {
   background-color: #28a745;
   color: white;
+      border: none;
+      padding: 20px;
+  font-size: 1.2rem;
+  border-radius: 10px;
 }
 
 .equals:hover {
   background-color: #1e7e34;
 }
 
-.zero {
+.btn-zero {
   grid-column: span 2;
+      border: none;
+      padding: 20px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+.btn-zero:hover {
+  background-color: #ddd;
 }
