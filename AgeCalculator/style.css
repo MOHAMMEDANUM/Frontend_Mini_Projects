@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+}
+
+.age-card {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.age-card h1 {
+  color: #2c3e50;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #5c6b79;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+input[type="date"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #a3bce3;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #f0f6ff;
+  color: #333;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #409944;
+}
+
+button.reset {
+  background-color: #f44336;
+}
+
+button.reset:hover {
+  background-color: #d32f2f;
+}
+
+#result {
+  font-size: 20px;
+  color: #2d2d2d;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.note {
+  background-color: #f5faff;
+  padding: 12px;
+  border-left: 5px solid #4caf50;
+  text-align: left;
+  border-radius: 8px;
+  color: #444;
+  font-size: 15px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Age Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="age-card">
+      <h1>🎂 Welcome to Age Calculator</h1>
+      <p class="subtitle">Easily find your age in years using your Date of Birth.</p>
+      
+      <label for="dob">📅 Enter your Birth Date:</label>
+      <input type="date" id="dob" />
+
+      <div class="btn-group">
+        <button onclick="calculateAge()">Calculate Age</button>
+        <button onclick="resetForm()" class="reset">Reset</button>
+      </div>
+
+      <div id="result">⏳ Waiting for input...</div>
+
+      <div class="note">
+        <p>🔹 This tool only calculates age in years based on the current date.</p>
+        <p>🔹 You can extend this to include months and days for more precision.</p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
