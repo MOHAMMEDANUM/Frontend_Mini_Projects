@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 class="title">Rock Paper Scissors</h1>
+
+  <div class="main-container">
+    <!-- Game Panel -->
+    <div class="game-box">
+        <div class="game-info">
+            <div class="center-box">
+                    <div class="emoji-display">❔</div>
+            </div>
+                <div class="hearts">❤️❤️❤️</div>
+            </div>
+
+
+      <div class="buttons">
+        <button class="choice"  id="rock">✊ Rock</button>
+        <button class="choice" id="paper">🖐 Paper</button>
+        <button class="choice" id="scissors">✌️ Scissors</button>
+      </div>
+
+
+
+      <div class="status">
+          <p id="round-result">Choose your move to start!</p>
+      </div>
+
+      <button id="play-again" style="display: none;">🔁 Play Again</button>
+
+
+
+
+    </div>
+
+    <!-- Stats Panel -->
+    <div class="stats-box">
+      <h2>: Game Stats :</h2>
+      <p class="stat">Matches Played: <span id="matches">0</span></p>
+      <p class="stat">Wins: <span id="wins">0</span></p>
+      <p class="stat">Losses: <span id="losses">0</span></p>
+      <p class="stat">Draws: <span id="draws">0</span></p>
+      <p class="stat">Win Streak: <span id="streak">0</span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

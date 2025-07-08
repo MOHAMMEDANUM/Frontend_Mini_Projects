@@ -1,0 +1,136 @@
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #800080;
+  color: #2c2c2c;
+}
+
+/* Title */
+.title {
+  background-color: rgb(92, 5, 92);
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  padding: 20px 0 30px 0;
+  margin: 0 0 20px 0;
+}
+
+/* Layout */
+.main-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* Game box and stats box */
+.game-box,
+.stats-box {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  width: 340px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Game Info - emoji and hearts */
+.game-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.center-box {
+  flex: 1;
+  text-align: center;
+}
+
+.emoji-display {
+  font-size: 60px;
+  
+}
+
+.hearts {
+    
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 28px;
+  padding-right: 10px;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.choice {
+  flex: 1;
+  padding: 15px;
+  border: 2px solid purple;
+  border-radius: 12px;
+  font-size: 18px;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.choice:hover {
+  background-color: #f3e5f5;
+}
+
+/* Result/Status Message */
+.status {
+  background: #f9f9f9;
+  padding: 10px;
+  border: 1px solid purple;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #333;
+  min-height: 40px;
+}
+
+/* Stats Box */
+.stats-box h2 {
+  color: purple;
+  margin-bottom: 20px;
+}
+
+.stat {
+  border: 2px solid purple;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  font-weight: bold;
+}
+#play-again {
+  margin-top: 15px;
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#play-again:hover {
+  background-color: #5a005a;
+}
